@@ -34,7 +34,10 @@ export class AssignmentsService {
     private http: HttpClient
   ) {}
 
-  url = 'https://api2096.herokuapp.com/api/assignments';
+  //url = 'https://api2096.herokuapp.com/api/assignments';
+
+  url = 'http://localhost:8010/api/assignments';
+
 
   getAssignments(): Observable<Assignment[]> {
     console.log('Dans getAssignments dans le service...');
